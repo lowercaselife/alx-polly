@@ -1,0 +1,21 @@
+{
+  "name": "api-tests",
+  "version": "1.0.0",
+  "description": "API endpoint test scripts for the Polling App",
+  "main": "index.js",
+  "type": "commonjs",
+  "scripts": {
+    "register-user": "node registerUser.js",
+    "login-get-polls": "node loginAndGetPolls.js",
+    "create-poll": "node createPoll.js",
+    "vote-poll": "node votePoll.js",
+    "test": "node test-suite.js",
+    "test:all": "npm run test"
+  },
+  "dependencies": {
+    "node-fetch": "^2.6.7"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.0"
+  }
+}
